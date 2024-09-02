@@ -1,3 +1,15 @@
 Computer Access: cd ../../../f/neocities
 git status (checks if all files are up to date)
 git commit -m "insert messeage here" (sends your stuff up to the repository)
+git add . (tracks all the files)
+
+to add a file:
+	drag and drop the file to the folder
+	git commit -m "[discribe update]" (commits new file)
+
+to remove file:
+	delete the file from the folder
+	git rm "images/gimp.txt"
+	git status (not nessesary checks if its been deleted)
+	git commit -m "[discribe update]" (commits changes)
+	

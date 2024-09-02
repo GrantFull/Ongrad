@@ -1,0 +1,3 @@
+Computer Access: cd ../../../f/neocities
+git status (checks if all files are up to date)
+git commit -m "insert messeage here" (sends your stuff up to the repository)

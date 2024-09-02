@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ongrad</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/nav-bar.js"></script>
+    <style>
+        body {
+            background-image: url('images/background01.jpg'); /* Replace 'your-image.jpg' with the actual path to your image file */
+            background-size: cover; /* This will cover the entire viewport */
+            background-repeat: no-repeat; /* To prevent the image from repeating */
+            padding-left:5%;
+            padding-right:5%;
+            margin-top:2vh;
+        }
+
+        .art-img {
+            padding:10px;
+            height:50vh;
+        }
+    </style>
+</head>
+<body>
+
+
+<!-- vv Top Nav vv -->
+<div id="main-nav" class="w3-row w3-center" data-folderDepth="0"></div>
+<!-- ^^ Top Nav ^^ -->
+
+<!-- vv Comics Sections vv -->
+<div class="w3-hide">
+<div class="w3-row w3-center" style="display: flex;position: relative;">
+    <div class="w3-quarter" style="align-items: center; display: flex;">
+        <h1 style="font-weight: bold; font-size: 120px; width:40%; color:white">Comics!</h1>
+    </div>
+
+    <div class="carousel-container w3-half center-right sharp-text-box" id="carousel1" style=" margin-bottom:5vh;">
+        <div class="carousel">
+            <div class="carousel-item">
+                <a href="art/esmeLeave.html"> <img src="images/comic/esme-lable.jpg" alt="Link to the deity Expo"> <h3>Esme Leaves!</h3> </a>
+            </div>
+            <div class="carousel-item">
+                <a href="art/churchOne.html"> <img src="images/comic/church_lable1.png" alt="Comic Shower"> <h3>Main Story Chapter One</h3> </a>
+            </div>
+            <div class="carousel-item">
+                <a href="art/churchTwo.html"> <img src="images/comic/church_lable2.png" alt="Comic Shower"> <h3>Main Story Chapter Two</h3> </a>
+            </div>
+            <div class="carousel-item">
+                <a href="art/deityExpo.html"> <img src="images/comic/magic-op.jpg" alt="Link to the deity Expo"> <h3>Deity Expo</h3> </a>
+            </div>
+            <div class="carousel-item">
+                <a href="art/umbrella.html"> <img src="images/umbrella-comic-icon.jpg" alt="Comic Shower"> <h3>Random Side Comic</h3> </a>
+            </div>
+        </div>
+        <div class="thumbnails" data-carousel="#carousel1">
+            <img class="thumbnail" src="images/comic/esme-lable.jpg" alt="Image of Beast">
+            <img class="thumbnail" src="images/comic/church_lable1.png" alt="Image of Beast">
+            <img class="thumbnail" src="images/comic/church_lable2.png" alt="Image of Beast">
+            <img class="thumbnail" src="images/comic/magic-op.jpg" alt="Image of Beast">
+            <img class="thumbnail" src="images/umbrella-comic-icon.jpg" alt="Image of Beast">
+        </div>
+    </div>
+</div>
+</div>
+<!-- ^^ Comics Sections ^^ -->
+
+<div id="art-section" class="w3-row">
+    <div class="w3-row">
+        <div class="w3-quarter w3-center" style="margin-top:10vh">
+            <h2>Settings</h2>
+            <h3 class="art-button" onclick="increaseHeight()">Magnify</h3>
+            <h3 class="art-button" onclick="decreaseHeight()">Shrink</h3>
+            <h3 class="art-button inclusive" onclick="inclusiveFunc()">And</h3>
+            <h3 class="art-button inclusive w3-hide" onclick="inclusiveFunc()">With</h3>
+            <p></p>
+        </div>
+        <div class="w3-threequarter w3-center">
+            <img src="images/characterart.jpg" style="height:50vh" alt="vines image">
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div id="cole" class="w3-col character-button" onclick="button('cole')"><h3>Cole</h3></div>
+        <div id="theo" class="w3-col character-button" onclick="button('theo')"><h3>Theodore</h3></div>
+        <div id="sun" class="w3-col character-button" onclick="button('sun')"><h3>Sun</h3></div>
+        <div id="ronan" class="w3-col character-button" onclick="button('ronan')"><h3>Ronan</h3></div>
+        <div id="esme" class="w3-col character-button" onclick="button('esme')"><h3>Esme</h3></div>
+        <div id="moon" class="w3-col character-button" onclick="button('moon')"><h3>Moon</h3></div>
+    </div>
+
+    <!-- vv Character Images vv -->
+    <div id="image-section" class="w3-center w3-row w3-padding" style="min-height: 20vh;">
+        <script>
+            let images = [
+              { src: "character083.jpg", characters: "theo" },
+              { src: "esme001.jpg", characters: "esme" },
+              { src: "character082.jpg", characters: "theo" },
+              { src: "character081.jpg", characters: "theo" },
+              { src: "character080.jpg", characters: "cole theo sun moon ronan esme" },
+              { src: "character079.jpg", characters: "esme" },
+              { src: "character078.jpg", characters: "ronan" },
+              { src: "character077.png", characters: "cole" },
+              { src: "character076.png", characters: "cole" },
+              { src: "character075.jpg", characters: "theo" },
+              { src: "character074.jpg", characters: "cole" },
+              { src: "character073.jpg", characters: "cole" },
+              { src: "character069.png", characters: "sun" },
+              { src: "theo002.png", characters: "theo" },
+              { src: "theo001.png", characters: "theo" },
+              { src: "character068.jpg", characters: "ronan" },
+              { src: "character067.jpg", characters: "sun" },
+              { src: "character066.jpg", characters: "esme" },
+              { src: "character065.jpg", characters: "cole" },
+              { src: "character064.jpg", characters: "theo" },
+              { src: "character037.jpg", characters: "cole theo sun moon ronan esme" },
+              { src: "character063.jpg", characters: "cole sun" },
+              { src: "character062.jpg", characters: "theo" },
+              { src: "character061.jpg", characters: "theo" },
+              { src: "character060.jpg", characters: "theo" },
+              { src: "character059.jpg", characters: "theo" },
+              { src: "character058.jpg", characters: "theo" },
+              { src: "character057.jpg", characters: "theo cole" },
+              { src: "character056.jpg", characters: "theo" },
+              { src: "character055.jpg", characters: "theo" },
+              { src: "character054.jpg", characters: "sun" },
+              { src: "character053.jpg", characters: "sun" },
+              { src: "character052.jpg", characters: "theo sun" },
+              { src: "character051.jpg", characters: "sun" },
+              { src: "character050.jpg", characters: "sun" },
+              { src: "character049.jpg", characters: "sun" },
+              { src: "character048.jpg", characters: "sun" },
+              { src: "character047.jpg", characters: "sun" },
+              { src: "character046.jpg", characters: "cole theo" },
+              { src: "character045.jpg", characters: "sun" },
+              { src: "character044.jpg", characters: "theo esme" },
+              { src: "character043.jpg", characters: "theo" },
+              { src: "character042.jpg", characters: "theo" },
+              { src: "character041.jpg", characters: "theo" },
+              { src: "character040.jpg", characters: "cole" },
+              { src: "character039.jpg", characters: "theo" },
+              { src: "character038.jpg", characters: "cole theo" },
+              { src: "character036.jpg", characters: "theo" },
+              { src: "character035.jpg", characters: "theo sun" },
+              { src: "character034.jpg", characters: "sun ronan" },
+              { src: "character033.jpg", characters: "sun moon" },
+              { src: "character032.png", characters: "theo" },
+              { src: "character031.jpg", characters: "sun moon" },
+              { src: "character030.jpg", characters: "cole theo" },
+              { src: "character029.jpg", characters: "esme" },
+              { src: "character028.png", characters: "sun" },
+              { src: "character027.jpg", characters: "cole theo" },
+              { src: "character026.png", characters: "sun moon" },
+              { src: "character025.jpg", characters: "cole theo" },
+              { src: "character024.jpg", characters: "cole" },
+              { src: "character023.jpg", characters: "cole" },
+              { src: "character022.png", characters: "theo" },
+              { src: "character021.jpg", characters: "cole" },
+              { src: "character020.jpg", characters: "sun moon ronan" },
+              { src: "character019.jpg", characters: "cole esme" },
+              { src: "character018.jpg", characters: "sun moon" },
+              { src: "character017.png", characters: "theo sun" },
+              { src: "character016.jpg", characters: "theo" },
+              { src: "character015.jpg", characters: "theo" },
+              { src: "character014.jpg", characters: "theo" },
+              { src: "character013.jpg", characters: "theo" },
+              { src: "character011.jpg", characters: "theo" },
+              { src: "character010.jpg", characters: "theo" },
+              { src: "character009.png", characters: "cole theo" },
+              { src: "character008.jpg", characters: "cole" },
+              { src: "character007.jpg", characters: "cole" },
+              { src: "character006.jpg", characters: "cole" },
+              { src: "character005.jpg", characters: "cole" },
+              { src: "character004.jpg", characters: "cole" },
+              { src: "character003.jpg", characters: "cole" },
+              { src: "character002.jpg", characters: "cole" },
+              { src: "character001.jpg", characters: "cole" },
+              { src: "squad.png", characters: "cole theo sun moon ronan esme" },
+              { src: "cole008.png", characters: "cole" },
+              { src: "cole007.png", characters: "cole" },
+              { src: "theosilly.png", characters: "theo" },
+              { src: "theo004.png", characters: "theo" },
+              { src: "sunsilly.png", characters: "sun" },
+              { src: "sun002.png", characters: "sun" },
+              { src: "sun001.png", characters: "sun" },
+              { src: "ronansilly.png", characters: "ronan" },
+              { src: "ronan001.png", characters: "ronan" },
+              { src: "esmesilly.png", characters: "esme" },
+              { src: "colesilly.png", characters: "cole" },
+              { src: "cole006.png", characters: "cole" },
+              { src: "cole005.png", characters: "cole" },
+              { src: "cole004.jpg", characters: "cole" },
+              { src: "cole003.png", characters: "cole" },
+              { src: "cole002.png", characters: "cole" },
+            ];
+        </script>
+    </div>
+    <!-- ^^ Character Images ^^ -->
+</div>
+
+
+<script src="javascript/art-page.js"></script>
+<script src="javascript/world.js"></script>
+<script src="javascript/img-center.js"></script>
+</body>
+</html>

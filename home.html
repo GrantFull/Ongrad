@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ongrad</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/nav-bar.js"></script>
+    <style>
+        body {
+            background-image: url('images/background01.jpg'); /* Replace 'your-image.jpg' with the actual path to your image file */
+            background-size: cover; /* This will cover the entire viewport */
+            background-repeat: no-repeat; /* To prevent the image from repeating */
+            padding-left:5%;
+            padding-right:5%;
+            margin-top:2vh;
+        }
+
+        #main-section{
+            padding:0px 1em 0px 1em;
+        }
+
+        .soft-text-box {
+            margin-bottom:5vh;
+            padding:0px 1em 0px 1em;
+        }
+
+        li::marker{ /* Makes the numbers in the authors list black */
+            color:black;
+        }
+
+        .author {
+            margin-top:-5vh;
+        }
+    </style>
+</head>
+<body>
+
+
+
+<!-- vv Top Nav vv -->
+<div id="main-nav" class="w3-row w3-center" data-folderDepth="0"></div>
+<!-- ^^ Top Nav ^^ -->
+
+
+<div id="main-section" style="background-image: url('images/background04.jpg');">
+    <h1 class="w3-center w3-text-white w3-jumbo" style="margin-top:10vh"><u>Look at Me</u></h1>
+    <div class="sharp-text-box w3-row side-padding w3-center" style="margin-bottom:5vh">
+        <h2>Artfight!!</h2>
+        <p>This year was my first year participating in Artfight, it was a lot of fun and I enjoyed drawing other people's characters.</p>
+        <p>Here are some of my fav drawings I did:</p>
+        
+        <div class="w3-row">
+            <div class="w3-col center-left" style="width:50%">
+                <img src="images/Artfight05.jpg" style="width:48%" alt="artfight image">
+                <img src="images/Artfight06.jpg" style="width:48%" alt="artfight image">
+                <img src="images/Artfight01.jpg" style="height:35vh" alt="artfight image">
+                <img src="images/Artfight04.jpg" style="height:35vh" alt="artfight image">
+            </div>
+            <div class="w3-col center-right" style="width:50%">
+                <img src="images/character-sheet.png" style="width:100%" alt="artfight image">
+            </div>
+        </div>
+
+        <div class="w3-row">
+        <p>Here are some of my fav drawings other ppl did for me:</p>
+            <a href="https://artfight.net/~Goonglab" target="_blank"><img src="images/Defense01.png" style="height:40vh" alt="artfight image"></a>
+            <a href="https://artfight.net/~Koleander" target="_blank"><img src="images/Defense02.jpg" style="height:40vh" alt="artfight image"></a>
+            <a href="https://artfight.net/~phantasmagor14" target="_blank"><img src="images/Defense04.png" style="height:40vh" alt="artfight image"></a>
+            <a href="https://artfight.net/~kazstarz" target="_blank"><img src="images/Defense06.jpg" style="height:40vh" alt="artfight image"></a>
+        </div>
+    </div>
+
+    <div class="w3-col soft-text-box w3-justify" style="width:45%; position: relative">
+        <img src="images/me001.png" alt="image of furry" style="width:300px; position: absolute; margin-top:-160px">
+        <h3>About Me</h3>
+        <p>My name is Grant, I'm 23 and work as an independent contractor for insurance companies. I love to rock climb to stay in shape. I made this website because its a great way for me to put down all my thoughts about my fantasy world. Everything used to be in a massive google doc that was impossible to navigate.</p>
+        <img src="images/me005.png" style="width:80%; margin-left: 10%" alt="Pic of me and livia">
+    </div>
+
+    <div class="w3-col" style="width:25%">
+        <img src="images/me002.png" style="width:100%; margin-top:15vh" alt="Pic of furry me">
+    </div>
+
+    <div class="w3-col soft-text-box side-padding" style="width:30%;">
+        <h3>Livia</h3>
+        <p>Livia is my gf and she is super cool.</p>
+        <img src="images/me006.png" style="width:100%" alt="Pic of furry livia">
+    </div>
+
+    <div class="w3-col soft-text-box side-padding w3-justify">
+        <img src="images/me009.png" style="height:50vh; margin-top:-35vh; float:right; transform: scaleX(-1);" alt="image of me"> 
+        <div class="w3-quarter" style="margin-top:50px;">
+            <h3>Top 10 Authors</h3>
+            <ol class="w3-hover" style="color:#ff69b4; text-decoration: underline;">
+                <li onclick="author(levGrossman)">Lev Grossman</li>
+                <li onclick="author(jackLondon)">Jack London</li>
+                <li onclick="author(brandonSanderson)">Brandon Sanderson</li>
+                <li onclick="author(scottLynch)">Scott Lynch</li>
+                <li onclick="author(robertJordan)">Robert Jordan</li>
+                <li onclick="author(brianMcclellan)">Brian Mcclellan</li>
+                <li onclick="author(joeAbercrombie)">Joe Abercrombie</li>
+                <li onclick="author(hpLovecraft)">H. P. Lovecraft</li>
+                <li onclick="author(nicholasEames)">Nicholas Eames</li>
+                <li onclick="author(junChang)">Jung Chang</li>
+            </ol>
+        </div>
+        <div id="levGrossman" class="w3-twothird w3-show author">
+            <h3>The Magicians!</h3>
+            <p>The Magicians by Lev Grossman is my favorite book series that I've read. The first book follows the main character Quentin who is a depressed teen, a character that I resonated with as a depressed teen. I loved the book so much that I put the series down for a few years because it had an ending I really liked at the time. When I picked it back up the book started with a little older and mature Quentin. The series showed the best display of character growth of any book or tv or media that i've ever seen. By the end of the book Quentin had changed completely and I was in a better place with myself. I finished the series a lot different than how I started it, the series felt like the main character was growing up alongside me. And light spoilers but Quentin's magical discipline was the best set up and pay off in a book that I've read.</p>
+        </div>
+        <div id="jackLondon" class="w3-twothird w3-hide author">
+            <h3>The Sea Wolf!</h3>
+            <p>Everything about this book is perfect, the setting, characters, and themes all fit seamlessly together.</p>
+        </div>
+        <div id="brandonSanderson" class="w3-twothird w3-hide author">
+            <h3>The Stormlight Archive / Mistborn Trilogy</h3>
+            <p>The Stormlight Archive was my introduction to fantasy reading. I picked it up to help the tedium of a long road trip unaware of the path it would take me down. If nothing else the series is grand, the series has great pacing. It starts out small scale and has a very natural, easy progression of power and scale. Worldbuilding is my favorite aspect of the series. Roshar feels alive and so different from earth. The great storm affects geography and civilization in fascinating ways. The series is full of characters. I loved routing for Kaladin, he is an altruistic, virtuous hero character that always puts others before himself. Characters like that can easily get in a trap of altruism and seem one dimensional or boring so Sanderson had to give him some flaws. And since they weren't coming from within, Sander put Kaladin through the ringer to give him some good old fashioned emotional damage. I think Sanderson did a very good job of portraying mental illness which isn't a topic I've come across in any of my other series. Dalinar is my favorite character, but there are so many to choose from: The Stump, Taravangian, Hoid, Teft, Rock, Navani are all great characters. The one character I'd say I don't like is Lift. Her concept is cool but the execution feels too “hey kids” millennial humor. In spite of its length the series stays captivating the entire way through. It had lots of great moments and is a great start to the fantasy genre.</p>
+        </div>
+        <div id="scottLynch" class="w3-twothird w3-hide author">
+            <h3>Gentleman Bastards</h3>
+            <p>Gentleman Bastards was a much needed relief for me after reading stormlight and wheel of time back to back. Sanderson and Jordan both created epic fantasies on massive world ending scales, use basically invisible prose, with mostly virtuous, powerful main characters and light swearing. This series was a welcome change, the whole first book took place in a single city, every sentence in the series is flowery and over the top, the main characters were edgy weak bastards, and they used normal people swearing. It feels so weak when a character's close friend dies and they look up into the rain and scream “storm it”. Normally I might have said that Lynch was a little too overzealous and edgy with the swearing but it just felt so cathartic at the time. The main draw for me was the city of Camorr, it was so rich and I loved that it was a port city and had water running throughout.</p>
+        </div>
+        <div id="robertJordan" class="w3-twothird w3-hide author">
+            <h3>Wheel of Time</h3>
+            <p>I read the Wheel of Time series after I had just finished the Stormlight Archive and wanted something deep and rich to sink my teeth into. Rand was a fantastic protagonist, following him throughout the story was a treasure. It was an amazing take on the chosen one trope that was pulled off in the greatest way I could imagine. I felt such an incredible catharsis when Rand hugged his father I almost cried. Him having three wives was kinda weird but definitely original. The different civilizations were interesting, the Aiel in particular. And the Aes Sedai were a cool concept on magical tyranny similar to a more noble version of the one in Gentleman Bastards. It had lots of important female characters which is a nice change of pace.</p>
+        </div>
+        <div id="brianMcclellan" class="w3-twothird w3-hide author">
+            <h3>Powder Mage</h3>
+            <p>Powder Mage by Brian Meclellan has a victorian-esk setting as opposed to the usual medieval era civilization. The book's main draw for me is how the plot develops and the events that happen during the book. The magic system has a couple unique elements to it that I really enjoyed. My favorite type of magic user are people called nacks. A nack is a person that was given a random buff like the ability to breathe underwater or never needing to eat food. I just love the concept, it's super fun and creative while being really simple.</p>
+        </div>
+        <div id="joeAbercrombie" class="w3-twothird w3-hide author">
+            <h3>First Law</h3>
+            <p>Fantastic series, in general my favtorie part about books are the setting and then the plot. Abercrombie stands out as an exception to that rule, reading this book I fell in love with his characters. This series would have been higher but Sand's internal dialogue was very repetitive and because of some of the things Logen did near the end of the book.</p>
+        </div>
+        <div id="hpLovecraft" class="w3-twothird w3-hide author">
+            <h3>H. P. Lovecraft</h3>
+            <p>Guy was sus, books were pog and influential, my favorite is the one with The Picture in the House and The Horror at Red Hook. </p>
+        </div>
+        <div id="nicholasEames" class="w3-twothird w3-hide author">
+            <h3>Kings of the Wyld</h3>
+            <p>Kings of the Wyld is the weirdest book of the bunch, it is the only stand alone book on the list and feels like it was written by a divorced man who watched football, peaked in highschool, has multiple daughters, and no sons. It was a super fun lighthearted read, the book is not trying to reinvent the wheel. The world would be right at home in any Arthurian legend aside from the massive deadly video game forest called the Wyld full of every magical beast and item. The book can be summarized by the phrase “getting the band back together” the characters are retired adventurers who are all “too old for this shit”. It was the funniest book of the series and has a gay wizard with incurable forest aids.</p>
+        </div>
+        <div id="junChang" class="w3-twothird w3-hide author">
+            <h3>Wild Swans</h3>
+            <p>Is incredible.</p>
+        </div>
+    </div>
+
+    <img src="images/bar005.gif" style="width:75%; margin-left:12.5%; margin-bottom:5vh;" alt="Image of me">
+
+    <div class="w3-col soft-text-box" style="width:25%; margin-left:5%;">
+        <h3 style="margin-left:8%">Favorite<img src="images/tv-static.gif" style="width:35%; margin-left:5%" alt="TV with static"></h3>
+        <ul>
+            <li>End of the Fucking World</li>
+            <li>The Great Pretender</li>
+            <li>Bullet Train</li>
+            <li>Porco Rosso</li>
+        </ul>
+    </div>
+
+    <div class="w3-col soft-text-box" style="width:60%; margin-left:5%;">
+        <h3>Accomplishments</h3>
+        <ul>
+            <li>Ragnar Race: 200 mile relay race that takes about 24 hours</li>
+            <li>Nasa: I did about a 9 month long paid internship with Nasa</li>
+            <li>Two Degrees: I got a degree in Computer Science and History at community college, but real college was too expensive so I stopped there.</li>
+            <li>Insurance Adjusting: I completed a three month deployment as an insurance adjuster, I had to work 13-14 hour days and get yelled at a lot.</li>
+        </ul>
+    </div>
+
+</div>
+<script src="javascript/world.js"></script>
+<script src="javascript/img-center.js"></script>
+</body>
+</html>

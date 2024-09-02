@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ongrad</title>
+    <link rel="icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../javascript/nav-bar.js"></script>
+    <style>
+        body {
+            background-image: url('../images/background01.jpg'); /* Replace 'your-image.jpg' with the actual path to your image file */
+            background-size: cover; /* This will cover the entire viewport */
+            background-repeat: no-repeat; /* To prevent the image from repeating */
+            padding-left:5%;
+            padding-right:5%;
+            margin-top:2vh;
+        }
+
+        #main-section {
+            background-image: url('../images/background03.jpg');
+            background-position: center;
+            padding-top:0px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+
+<!-- vv Top Nav vv -->
+<div id="main-nav" class="w3-row w3-center" data-folderDepth="1"></div>
+<!-- ^^ Top Nav ^^ -->
+
+
+<!-- vv Page Contents vv -->
+<div id="main-section">
+
+    
+    <!-- vv Section A vv -->
+    <div class="w3-row" style="margin-top:5vh">
+        <div class="w3-quarter world-nav" style="position: relative; z-index: 2;">
+            <div class="">
+                <h3 class="w3-center">Find it!</h3>
+                <a href="../world.html"><h4>Planet</h4></a>
+                <a href="continents.html"><h4>Continents</h4></a>
+                <a href="magic.html"><h4>Magic</h4></a>
+                <a href="gods.html"><h4>Gods</h4></a>
+                <a href="species.html"><h4>Species</h4></a>
+            </div>
+        </div>
+
+        <div class="w3-threequarter w3-padding soft-text-box w3-center" style="margin-top:8vh"> 
+            <div class="w3-row">
+                <h1 class="w3-center w3-text-grey"><u>Ongrad</u></h1>
+                <div class="w3-col w3-padding" style="width:20%;"><img src="../images/globe-spin.gif" style="width:100%" loading="lazy" alt="spinning globe"></div>
+                <p class="w3-col justify" style="width:60%;">Ongrad is a world of stark dualites. Long winters capable of raising water levels with frozen ice. The summers are hot enough to dry up rivers and parch lakes. Two continents complement each other as they swim in the 7 great seas. Flora adapted to heartyer to sustain the seasons, or weaker to die off waiting dormant beneath the frozen ground. Fauna developed to cope with days & nights lasting months.</p>
+                <div class="w3-col w3-padding" style="width:20%;"><img src="../images/globe-spin.gif" style="width:100%; transform:scaleX(-1)" loading="lazy" alt="spinning globe"></div>
+            </div>
+        
+            <a href="#down-arrow-id"><div id="down-arrow-id" class="down-arrow w3-row"></div></a>
+        </div>
+    </div>
+
+    <div class="sticky-bar w3-row w3-center" id="stickyBar">
+        <div class="w3-col nav-option"><a href=../world.html><h4>Planet</h4></a></div>
+        <div class="w3-col nav-option"><a href=continents.html><h4>Continents</h4></a></div>
+        <div class="w3-col nav-option"><a href=magic.html><h4>Magic</h4></a></div>
+        <div class="w3-col nav-option"><a href=gods.html><h4>Gods</h4></a></div>
+        <div class="w3-col nav-option"><a href=species.html><h4>Species</h4></a></div>
+    </div>
+    <!-- ^^ Section A ^^ -->
+    <div class="w3-row w3-center">        
+        <img src="../images/orc001.jpg" style="height:15vh; border-radius: 5px;" class="w3-hover" alt="Orc title card" onclick="creatureWiki(orcSpecies)">
+        <img src="../images/human001.jpg" style="height:15vh; border-radius: 5px;" class="w3-hover" alt="Human title card" onclick="creatureWiki(humanSpecies)">
+
+        <img src="../images/dwarf001.jpg" style="height:15vh; border-radius: 5px;" class="w3-hover" alt="Dwarf title card" onclick="creatureWiki(dwarfSpecies)">
+        <img src="../images/ape002.jpg" style="height:15vh; border-radius: 5px;" class="w3-hover" alt="Ape title card" onclick="creatureWiki(apeSpecies)">
+        
+    </div>
+
+
+
+    <div id="orcSpecies" class="w3-row w3-hide creature-wiki">
+        <div class="w3-padding world-section">
+            <h2>Traits</h2>
+                <ul>
+                    <li>The orcs' green, brown skin and strong build makes them some of the most physically imposing species.</li>
+                    <li>They thrive in the tropical jungle at the equator and can be found in most major forests.</li>
+                    <li>They are built for the trees with long sinewy powerful arms and less impressive shorter legs.</li>
+                    <li>Best known for their brute strength and a dislike of theoretical concepts. They stand an average of 163cm.</li>
+                    <li>They do not do well in cold weather environments.</li>
+                    <li>They live in smaller groups called legions that thrive at numbers from 100 maxing out at around 2,000.</li>
+                </ul>
+        </div>
+        
+        <div class="w3-padding world-section">
+            <h2>Notable kingdoms</h2>
+                <ul>
+                    <li>Green is a kingdom in the heart of the rainforest. At a young age every citizen sucks the poison from a beetle that reveals god to them for a short time.</li>
+                    <li>Blue is a coalition of unified legions occupying one of the major islands of Giwn. They created great seafaring vessels. </li>
+                    <li>Yellow is a legion that lives along the forested ridge of the body continent. It is a well protected area because of the mountain range separating them from any other civilization.</li>
+                    <li>Purple is a legion that resides in the mountain region of the tail continent, it heavily relies on trading for its food because the trees this civilization inhabits don’t produce food.</li>
+                </ul>
+        </div>
+            
+        <div class="w3-padding world-section">
+            <h2>Creation Myth</h2>
+                <p class="justify">In the beginning, Ongrad was a flat and barren across the whole of the world laid cracked clay beds. The surface had no water, no life, not even any mountains. Ongrad suffered no motion, it did not spin, it did not circle around the sun, and its moon lay still in the sky above. No eyes suffered the sight of this desolation but they would be of no use since the unending days suffered pitch darkness. The sky was magnificent, in its primordial form the heavens contained all life. First the wind began to blow a massive downdraft. It lifted on the cracks in the land and tore them asunder.  The winds blew the soft dry land into mountains and valleys. They blew so hard that Ongrad began to spin faster until the world itself started to move and the moon with it. The downdraft gave way to rain, which turned the sand into solid earth packed with the force of the rain. The water filled the lowlands, forming oceans, rivers, and lakes, and nourishing the parched earth. Life began to emerge from the once barren land. Plants sprouted, animals appeared, and soon the world was teeming with life. Where lightning struck the veins of ore were created, hail cratered deep into the ground creating aquifers and springs, where snow fell meadows of soft grass sprouted. When the sky ran out of water it gave its lifeblood this created all the creatures of the land. The red blood that pooled would become humans, the white blood became apes, the brown blood became dwarves, and the green blood became orcs. Most often these different bloods would mix together this formed all the creatures of lesser intelligence and stature. Different amounts and types of blood created different creatures. When the sky had given its last drop the earth began to dry, the mountains solidified and the pools of lifeblood congealed into the creatures of Ongrad.</p>
+        </div>
+    </div>
+
+
+    <div id="humanSpecies" class="w3-row w3-hide creature-wiki">
+        <div class="w3-padding world-section">
+            <h2>Traits</h2>
+                <ul>
+                    <li>Not much explanation needed for this one, humans stand an average of 163cm.</li>
+                    <li>They are extremely agricultural and can seemingly grow anything anywhere.</li>
+                    <li>They inhabit the large continent only.</li>
+                    <li>They are a friendly race and keep in good relations with all the other species.</li>
+                    <li>They live in the second largest groups with large cities housing a max of around 20,000 people.</li>
+                </ul>
+        </div>
+        
+        <div class="w3-padding world-section">
+            <h2>Notable kingdoms</h2>
+                <ul>
+                    <li>Southern Reach is a large human population that exists at the north pole. The harsh environment causes the city to not have strong fortification because nobody is vying for the land. Buildings are squat and close together, massive cathedrals tower over the town imposing the will of a controlling god.</li>
+                    <li>Excalibur is a large kingdom in the grasslands bordering the rainforest. It is surrounded by farms that supply the kingdom and trade its excess to nearby kingdoms.</li>
+                </ul>
+        </div>
+    </div>
+
+    
+    <div id="dwarfSpecies" class="w3-row w3-hide creature-wiki">
+        <div class="w3-padding world-section">
+            <h2>Traits</h2>
+                <ul>
+                    <li>Dwarves are stout creatures and are very similar to humans.</li>
+                    <li>The men have big bushy beards and the woman’s faces are clean shaven although a decent amount of them can also grow facial hair.</li>
+                    <li>They experience very little sexual dimorphism and usually can’t be told apart by other species.</li>
+                    <li>They experience very little sexual dimorphism and usually can’t be told apart by other species.</li>
+                    <li>They live underground in massive communities, the largest of all the species.</li>
+                    <li>They generally have a grumpy disposition.</li>
+                    <li>They have an average height of 140cm.</li>
+                    <li>They excel at creation, whether it's creating imposing megastructures or pocket watches.</li>
+                </ul>
+        </div>
+        
+        <div class="w3-padding world-section">
+            <h2>Notable kingdoms</h2>
+                <ul>
+                    <li>Tabs is an underground civilization found in the massive crater on the lesser continent. Dwarven houses and structures jut out of the sides of the inside walls. They rely on the underground for temperature control during the hot summers. Very little rainfall hits the desert area and as such water is a scarce commodity and used only for drinking.</li>
+                    <li>Dagoth is a mountain kingdom that networks throughout the central pass on the body continent. It is a major thoroughfare for travelers moving across the greater continent and is heavily used despite the tolls because it is the safest route for miles around. They rely on humans to support the food demand for their massive population.</li>
+                </ul>
+        </div>
+    </div>
+
+    <div id="apeSpecies" class="w3-row w3-show creature-wiki">
+        <div class="w3-padding world-section w3-twothird" style="margin-top:4vh">
+            <h2>Traits</h2>
+                <ul>
+                    <li>They have hunched posture, proportionally long arms, stand smaller than humans, and hair that covers their body.</li>
+                    <li>They live on the tail continent and are nomadic.</li>
+                    <li>They are very hairy semi-nomadic creatures.</li>
+                    <li>They have adapted to life on the south pole where the night and day cycle lasts a year.</li>
+                    <li>They wear a headband that covers the eye that they are not using which they swap twice a year on each solstice.</li>
+                    <li>They forage for plants and game during the day and forage for mushrooms and eat preserved meat during the night.</li>
+                    <li>They have one white eye specialized for seeing in low light during the night, and one very dark eye for seeing during the long and bright days.</li>
+                </ul>
+        </div>
+        <img src="../images/ape001.jpg" style="width:31%; margin-left:2%; border-radius: 0px;" alt="Ape image">
+            
+        <div class="w3-padding world-section" style="margin-top:4vh">
+            <h2>Creation Myth</h2>
+            <p class="w3-justify">In the beginning a frog and salamander inhabited the earth. The frog Garp roamed the earth by day and by night slept in lakes, rivers and the ocean. The salamander is the color of fire and molten rock. It chased the frog every night and slept during the day. The frog was constantly running from the salamander because the Garp knew that if it was caught the salamander would try to eat him. The salamander never rested or slowed but he was much slower than the frog. Garp jumped over the mountains and into the valleys, every day he got farther and farther from the salamander. But he would rest for one week until the salamander would catch up. Garp would wait till Just before the salamander would close his maw on the frog, before leaping out of the way to taunt him. On a particularly hot day the frog was feeling sluggish, it jumped into a bath of boiling black tar to rest. The days grew hotter and the long week was coming to a close as the salamander approached. As the salamander approached, Garp got ready to leap away but the tar held it in a firm grip. Despite the tar the salamander never slowed and as it came closer it unhinged its jaw. The frog flexed its legs and as it jumped the salamander caught hold of its tail. Propelled by the tension of the sludge and the pain of the bite the frog lept so high it reached the sky. Garp became the moon and the salamander became the sun. The salamander still chases but the frog learned its lesson and moves slow enough to not need rest.</p>
+        </div>
+        
+
+        <div class="w3-row w3-center">
+            <img class="w3-padding" src="../images/ape003.jpg" style="height:40vh;">
+            <img class="w3-padding" src="../images/ape004.jpg" style="height:40vh;">
+            <img class="w3-padding" src="../images/ape005.jpg" style="height:40vh;">
+            <img class="w3-padding" src="../images/ape006.jpg" style="height:40vh;">
+        </div>
+    </div>
+
+</div>
+<!-- ^^ Gecko Images ^^ -->
+ 
+<script src="../javascript/world.js"></script>
+<script>
+    let prevStickyBarTop = 0;
+    const container = document.getElementById('main-section');
+    
+    container.addEventListener('scroll', function () {
+        const stickyBar = document.getElementById('stickyBar');
+        const stickyBarRect = stickyBar.getBoundingClientRect();
+    
+        // Check if stickyBarRect.top is the same number as prevStickyBarTop
+        if (stickyBarRect.top === prevStickyBarTop) {
+            console.log('on');
+            stickyBar.classList.add("w3-light-grey");
+        } else {
+            console.log('off');
+            stickyBar.classList.remove("w3-light-grey");
+        }
+    
+        prevStickyBarTop = stickyBarRect.top;
+    });
+</script>
+</body>
+</html>

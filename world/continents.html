@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ongrad</title>
+    <link rel="icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../javascript/nav-bar.js"></script>
+    <style>
+        body {
+            background-image: url('../images/background01.jpg'); /* Replace 'your-image.jpg' with the actual path to your image file */
+            background-size: cover; /* This will cover the entire viewport */
+            background-repeat: no-repeat; /* To prevent the image from repeating */
+            padding-left:5%;
+            padding-right:5%;
+            margin-top:2vh;
+        }
+
+        #main-section {
+            background-image: url('../images/background05.jpg');
+            background-position: center;
+            padding-top:0px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+
+<!-- vv Top Nav vv -->
+<div id="main-nav" class="w3-row w3-center" data-folderDepth="1"></div>
+<!-- ^^ Top Nav ^^ -->
+
+
+<!-- vv Page Contents vv -->
+<div id="main-section">
+
+    
+<!-- vv Section A vv -->
+<div class="w3-row" style="margin-top:5vh">
+    <div class="w3-quarter world-nav">
+        <h3 class="w3-center">Find it!</h3>
+        <a href="../world.html"><h4>Planet</h4></a>
+        <a href="continents.html"><h4>Continents</h4></a>
+        <a href="magic.html"><h4>Magic</h4></a>
+        <a href="gods.html"><h4>Gods</h4></a>
+        <a href="species.html"><h4>Species</h4></a>
+    </div>
+
+    <div class="w3-threequarter w3-padding soft-text-box w3-center" style="margin-top:8vh"> 
+        <div class="w3-row">
+            <h1 class="w3-center w3-text-grey"><u>Ongrad</u></h1>
+            <div class="w3-col w3-padding" style="width:20%;"><img src="../images/globe-spin.gif" style="width:100%" loading="lazy" alt="spinning globe"></div>
+            <p class="w3-col justify" style="width:60%;">Ongrad is a world of stark dualites. Long winters capable of raising water levels with frozen ice. The summers are hot enough to dry up rivers and parch lakes. Two continents complement each other as they swim in the 7 great seas. Flora adapted to heartyer to sustain the seasons, or weaker to die off waiting dormant beneath the frozen ground. Fauna developed to cope with days & nights lasting months.</p>
+            <div class="w3-col w3-padding" style="width:20%;"><img src="../images/globe-spin.gif" style="width:100%; transform:scaleX(-1)" loading="lazy" alt="spinning globe"></div>
+        </div>
+    
+        <a href="#down-arrow-id"><div id="down-arrow-id" class="down-arrow w3-row"></div></a>
+    </div>
+</div>
+
+<div class="sticky-bar w3-row w3-center" id="stickyBar">
+    <div class="w3-col nav-option"><a href=../world.html><h4>Planet</h4></a></div>
+    <div class="w3-col nav-option"><a href=continents.html><h4>Continents</h4></a></div>
+    <div class="w3-col nav-option"><a href=magic.html><h4>Magic</h4></a></div>
+    <div class="w3-col nav-option"><a href=gods.html><h4>Gods</h4></a></div>
+    <div class="w3-col nav-option"><a href=species.html><h4>Species</h4></a></div>
+</div>
+<!-- ^^ Section A ^^ -->
+
+
+<!-- vv Secondary Continent Section vv -->
+<div class="w3-row">
+    <h1 class="w3-center w3-text-grey w3-jumbo">Continents</h1>
+    <div class="w3-padding">
+        <div class="w3-row w3-center">
+            <div class="w3-col continent-button" onclick="loadCountry('Estuary')"> <h3>Estuary</h3> </div>
+            <div class="w3-col continent-button" onclick="loadCountry('Dwarf')"> <h3>Dwarf</h3> </div>
+            <div class="w3-col continent-button" onclick="loadCountry('East')"> <h3>East</h3> </div>
+            <div class="w3-col continent-button" onclick="loadCountry('North Crust')"> <h3>North Crust</h3> </div>
+            <div class="w3-col continent-button" onclick="loadCountry('South Crust')"> <h3>South Crust</h3> </div>
+        </div>
+
+        <div class="w3-col w3-row w3-center continent-button-big" onclick="loadCountry('Cradle')"> <h3>Cradle</h3> </div>
+
+        <div class="w3-row w3-center">
+            <div class="w3-col continent-button" onclick="loadCountry('Expanse')"> <h3>Expanse</h3> </div>
+            <div class="w3-col continent-button" onclick="loadCountry('North')"> <h3>North</h3> </div>
+            <div class="w3-col continent-button" onclick="loadCountry('South Peninsula')"> <h3>South Peninsula</h3> </div>
+            <div class="w3-col continent-button" onclick="loadCountry('Plateau')"> <h3>Plateau</h3> </div>
+            <div class="w3-col continent-button" onclick="loadCountry('North Peninsula')"> <h3>North Peninsula</h3> </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="countries"><!-- Continents -->
+        <script>
+            const countryArray = [
+                {   name: "Estuary",
+                src: "continent05",
+                paragraph: "An estuary is where a river meets the ocean, the area is named after the estuary of the Grand River. The Estuary was originally home to a small dense mangrove that sprouted out of a delta. Dwarves funneled the river through a deep fast running drainage ditch killing the mangrove, making way for the creation of the Zmur. Zmur was built with Dwarven engineering to stand tall and proud, it's known as the moss city because of the green tinted stone found near and around the city which were used by the dwarves to create the foundations and many of the buildings. The brackish water is home to several port towns, the major of them Zmur. The city is a vital part to trading all throughout the cradle because it controls access to the Grand river. The southern portion of the map is populated by small deserts, grasslands, and woodlands."},
+
+                {   name: "Dwarf",
+                src: "continent03",
+                paragraph: "This area is based directly off the Andes mountains in south america. The dwarven range is formed from the subduction of an oceanic tectonic plate with the plate that makes up the continent. It has a very moist southern side near the ocean with little rainfall. And a much rainier northern side with a more gradual slope. Its name comes from the fact that the region is nearly entirely inhabited by dwarven civilization. Most of these cities are built where the water is on the windward (northern) side of the mountain range. Kendal is a dwarven city on the leeward (south) side of the mountain range. The dwarves of Kendal dug a tunnel through miles of mountain to get to a windward water source. The water runs through a duct and out the southern side of the mountain. This excess water created a altar delta which facilitates an area unique to the region with multiple endemic plant species."},
+
+                {   name: "East",
+                src: "continent04",
+                paragraph: "The far east is a naval empire, because of the natural barrier of the expanse not much contact is made. The population majority is human and bug, with a smaller but vital orc population that facilitates the building, and maintenance of great ocean vessels."},
+
+                {   name: "North Crust",
+                src: "continent10",
+                paragraph: "The north crust has a very small population for its size. It has very harsh conditions for growing crops. A gradual ocean slope from the land which makes the creation of harbor towns an impossibility for most of the shoreline. The inhabitants here have a stereotype of being drunk, fighting and not wearing clothes. Not a lot of continental trade occurs throughout the North Crust because of the lack of ports and the fact that they are mostly cut off from the rest of the world aside from the two entrances on the east and west. They have a lot of iron near the center of the region. It gets lots of rain and rivers because during the winter, the heavy air drops off most of its moisture on its way up the plateau."},
+
+                {   name: "South Crust",
+                src: "continent13",
+                paragraph: "The South Crust is a very thin stretch of land with a very heavy orc population that thrives in the strange landscape. The amount of rainfall would land the southern crust's climate into a desert classification, but the moisture levels of the crust are exceptionally high due to the Dwarven mountain range. This caused the plants to evolve in a very unique way: rather than adapting to getting their moisture from the ground, the plants rely directly on the moist air itself for their water. These plants vary widely but generally have much weaker root systems, have soft leaves rather than waxy ones, and have much more surface area. One of these plants local exclusively to this area is a species of tree that lend themselves wonderfully to ocean vessels that the orc population use to their full advantage. Deep waters, majority orc population, & steep mountains immediately to the north make this area a very port heavy ocean oriented area. One notable distinct climate area are the two deltas formed from the diversion of major rivers into southern dwarven areas. They created great steady dams that deposit enough sediment to form two vast mangrove areas."},
+
+                {   name: "Cradle",
+                src: "continent02",
+                paragraph: "The Cradle Continent’s name comes from the large, central region that is surrounded by mountains on the north and south side. This area is the most densely populated on the Continent and is known as The Cradle for a few key reasons. The harsh wind and weather that comes in from the north sea is broken by the higher altitude steppe before they reach the Cradle. Large enough clouds roll over the steppe and break in mountains south of the Cradle. These clouds provide the water that form many large rivers and carry nutrient rich sediment down from the mountain range and into the cradle. The southern mountains wall off all of the weather that would come from the south. Humans who are natural farmers thrive in this safe fertile environment. During the northern winter the moist air coming off the ocean is denser and doesn’t usually make its way over the plateau. However in the summer the air is less dense and the winds are much stronger allowing for plenty of rain to reach into and over the cradle."},
+
+                {   name: "Cradle",
+                src: "continent02",
+                paragraph: "The Cradle Continent’s name comes from the large, central region that is surrounded by mountains on the north and south side. This area is the most densely populated on the Continent and is known as The Cradle for a few key reasons. The harsh wind and weather that comes in from the north sea is broken by the higher altitude steppe before they reach the Cradle. Large enough clouds roll over the steppe and break in mountains south of the Cradle. These clouds provide the water that form many large rivers and carry nutrient rich sediment down from the mountain range and into the cradle. The southern mountains wall off all of the weather that would come from the south. Humans who are natural farmers thrive in this safe fertile environment. During the northern winter the moist air coming off the ocean is denser and doesn’t usually make its way over the plateau. However in the summer the air is less dense and the winds are much stronger allowing for plenty of rain to reach into and over the cradle."},
+
+                {   name: "Expanse",
+                src: "continent06",
+                paragraph: "The Expanse is the largest region, it has a large desert and. The roads are always in disrepair, constant rain turns them to mud and they don’t get serviced because the region is very disrupted by lots of fights and wars. It has a large bayou created by the river twins: sun & moon. The twilight bayou is mostly a freshwater bayou, with endemic species of fish, reptiles and amphibians."},
+
+                {   name: "North",
+                src: "continent09",
+                paragraph: "The north crust has a very small population for its size. It has very harsh conditions for growing crops. A gradual ocean slope from the land which makes the creation of harbor towns an impossibility for most of the shoreline. The inhabitants here have a stereotype of being drunk, fighting and not wearing clothes. Not a lot of continental trade occurs throughout the North Crust because of the lack of ports and the fact that they are mostly cut off from the rest of the world aside from the two entrances on the east and west. They have a lot of iron near the center of the region. It gets lots of rain and rivers because during the winter, the heavy air drops off most of its moisture on its way up the plateau."},
+
+                {   name: "South Peninsula",
+                src: "continent14",
+                paragraph: "The desert is home to a Palmato Gecko-esk god with six legs. One eye on the top of his head and he peeps out into the desert. black tongue It lives under the sand (near or in the eye of the sahara). About 20 feet in length (tail included) It wriggles under the sand causing tremors. When it enters the world above it does its eye first, by opening its eye in the sand. He lives in an underground spot where there is always a small stream of sand trickling down like an hourglass, and there's another pit that nobody goes down. Mad scientist gecko that needs the oil to de-stick his hands."},
+
+                {   name: "Plateau",
+                src: "continent12",
+                paragraph: "The Plateau is home to a majority bug population who live in tunnel networks that span large portions of the Plateau. The high elevation of the Plateau causes it to have a much colder climate than the surrounding lowlands. This temperature gradient creates a strong pressure gradient that affects atmospheric circulation patterns. The plateau's elevation also causes moist air to rise and cool, which can cause precipitation to fall in nearby areas as the air moves towards the center of the low-pressure area and lifts upwards. However, the plateau also creates a barrier that can prevent the denser, moisture rich air from reaching the Cradle, causing the region to be more dry than it normally would be. During the northern summer, warm, moist air from the Gulf Ocean flows over the plateau, causing the heavy rains south of the Plateau."},
+
+                {   name: "North Peninsula",
+                src: "continent11",
+                paragraph: "The North Peninsula has harsh weather and is not generally conducive to farming which causes it to have a smaller, more spread out population. It has three kingdoms: Arhyew, Mad, Guanesia, and the Winia Coast. The peninsula’s northern border is the Gulf Ocean, which has few ports because of bad weather and little protection for ships. The direction of the shoreline means that wind and weather will enter gulfs unbroken by land. The southern and western shorelines lend themselves wonderfully to shorelines filled with ports. The ports have safety provided by the land as well as incredibly fast currents that alternate their direction once per year."},
+            ]
+        </script>
+    </div>
+</div>
+
+<!-- ^^ Section B ^^ -->
+<script src="../javascript/world2.js"></script>
+<script>
+    let prevStickyBarTop = 0;
+    const container = document.getElementById('main-section');
+    
+    container.addEventListener('scroll', function () {
+        const stickyBar = document.getElementById('stickyBar');
+        const stickyBarRect = stickyBar.getBoundingClientRect();
+    
+        // Check if stickyBarRect.top is the same number as prevStickyBarTop
+        if (stickyBarRect.top === prevStickyBarTop) {
+            console.log('on');
+            stickyBar.classList.add("w3-light-grey");
+        } else {
+            console.log('off');
+            stickyBar.classList.remove("w3-light-grey");
+        }
+    
+        prevStickyBarTop = stickyBarRect.top;
+    });
+</script>
+</body>
+</html>

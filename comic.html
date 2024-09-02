@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ongrad</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/nav-bar.js"></script>
+    <style>
+        body {
+            background-image: url('images/background01.jpg'); /* Replace 'your-image.jpg' with the actual path to your image file */
+            background-size: cover; /* This will cover the entire viewport */
+            background-repeat: no-repeat; /* To prevent the image from repeating */
+            padding-left:5%;
+            padding-right:5%;
+            margin-top:2vh;
+        }
+
+        #main-section{
+            padding:2vh 1em 0px 1em;
+        }
+
+        .soft-text-box {
+            margin-bottom:5vh;
+            padding:0px 1em 0px 1em;
+        }
+
+        .time-line {       /* Little bar that visually connects the nav button to the box below*/
+            border-top: 1vh solid mediumaquamarine/* #ff69b4 */;
+            margin-top: 0vh;
+            height: 1vh;
+            width:100%;
+            float:center;
+        }
+
+        .timeline-big {       /* Little bar that visually connects the nav button to the box below*/
+            background-color: aqua;
+            margin-top: -5.5vh;
+            height: 10vh;
+            float: left;
+            margin-left:2.5%;
+            margin-right:2.5%;
+            width:.5%;
+        }
+
+        .timeline-medium {       /* Little bar that visually connects the nav button to the box below*/
+            background-color:aquamarine/* #ff69b4 */;
+            margin-top: -3vh;
+            height: 5vh;
+            float: left;
+            margin-left:2.5%;
+            margin-right:2.5%;
+            width:.5%;
+        }
+
+        .timeline-big:hover, .timeline-medium:hover {
+            cursor: pointer;
+            width: 3.5%;
+            margin-left:1%;
+            margin-right:1%;
+
+        }
+
+        /* Initially hidden */
+        .comic-hide {
+            opacity: 0;
+            visibility: hidden;
+            position: relative;
+            width: 0px;
+            height: 0px;
+            animation: none; /* No animation initially */
+            text-align: center;
+            float:right;
+        }
+
+        /* Shown with fade-in and animation */
+        .comic-show {
+            opacity: 1;
+            visibility: visible; 
+            position: relative;            
+            overflow: hidden;
+            animation: mymove .8s forwards; /* Start the animation */
+            text-align: center;
+        }
+
+        .thumb-img {
+            max-width:100%; 
+            max-height:35vh; 
+            margin-bottom:2.5vh;
+        }
+
+        /* Hover to show */
+        .div-to-hover:hover .comic-hide {
+            opacity: 1;
+            visibility: visible;
+            width: auto;
+            animation: mymove .8s forwards;
+        }
+
+        /* Keyframes for the animation */
+        @keyframes mymove {
+            from { top: 60vh; }
+            to { top: 0px; }
+        }
+
+        .click-img{ height:42.5vh; float:right; border-radius: 5em; padding: 8px;}
+
+        .click-txt { width:55%; max-height:35vh; margin-left:3%; overflow: auto; float:right; }
+
+        .click-btn { width:55%; max-height:8vh; float:right }
+    </style>
+</head>
+<body>
+
+<!-- vv Top Nav vv -->
+<div id="main-nav" class="w3-row w3-center" data-folderDepth="0"></div>
+<!-- ^^ Top Nav ^^ -->
+
+
+<div id="main-section" style="background-image: url('images/background06.jpg'); background-position: center; overflow: hidden;">
+
+
+<div class="w3-row" style="height: 55vh; position: relative; z-index: 1; overflow: hidden;">
+        <div id="magicOP-hover" class="comic-hide w3-quarter">
+            <img src="images/comic/Magic-Expo-thumb2.jpg" class="thumb-img" alt="Image of comic">
+            <div class="sharp-text-box" style="max-height:10vh"><h4 style="margin:0px">Magic System Infographic</h4></div>
+        </div>
+        <div id="magicOP-click" class="comic-hide comic-click w3-threequarter" style="float: right;">
+            <div class="w3-col" style="width:40%; background-color: red;">
+                <img src="images/comic/Magic-Expo-thumb1.jpg" class="click-img sharp-text-box" alt="Image of comic">
+            </div>
+            <div class="soft-text-box justify w3-col click-txt">
+                <h4>Magic Expo</h4>
+                <p>A little comic I wrote that explains the gods and demi-gods in my story.</p>
+                <a href="world/gods.html"><h4>Gods Web Page</h4></a>
+            </div>
+            <a href="art/deityExpo.html"><div class="sharp-text-box w3-col click-btn"><h4>Gods Comic</h4></div></a>
+        </div>
+
+        <div id="esmeLeaves-hover" class="comic-hide w3-quarter">
+            <img src="images/comic/esme_thumb.jpg" class="thumb-img" alt="Image of comic">
+            <div class="sharp-text-box" style="max-height:10vh"><h4 style="margin:0px">Esme Leaves Her Village</h4></div>
+        </div>
+        <div id="esmeLeaves-click" class="comic-hide comic-click w3-threequarter" style="float: right;">
+            <div class="w3-col" style="width:40%;">
+                <img src="images/comic/esme_07.jpg" class="click-img sharp-text-box" alt="Image of comic">
+            </div>
+            <div class="soft-text-box justify w3-col click-txt">
+                <h4>Esme Leaves</h4>
+                <p>Story about Esme leaving her home for the first time. This takes place prior to the events of the main story. Its a short 6 pages but establishes the relationship between Theo and his sister.</p>
+                <p>This is my most recent comic.</p>
+                <a href="characters/esme.html"><h4>Esme Web Page</h4></a>
+            </div>
+            <a href="art/esmeLeave.html"><div class="sharp-text-box w3-col click-btn"><h4>Esme Comic</h4></div></a>
+        </div>
+
+        <div id="church1-hover" class="comic-hide w3-quarter">
+            <img src="images/comic/church_lable1.png" class="thumb-img" class="soft-text-box" style="height:30vh; padding:1em" alt="Image of comic">
+            <div class="sharp-text-box" style="max-height:10vh"><h4 style="margin:0px">Theodore meets a stranger</h4></div>
+        </div>
+        <div id="church1-click" class="comic-hide comic-click w3-threequarter" style="float: right;">
+            <div class="w3-col" style="width:40%;">
+                <img src="images/comic/church_1-34.jpg" class="click-img sharp-text-box" alt="Image of comic">
+            </div>
+            <div class="soft-text-box justify w3-col click-txt">
+                <h4>Main Story Chapter 1</h4>
+                <p>The main comic, very cool, very epic.</p>
+            </div>
+            <a href="art/churchOne.html"><div class="sharp-text-box w3-col click-btn"><h4>Main Comic</h4></div></a>
+        </div>
+        
+
+        <div id="church2-hover" class="comic-hide w3-quarter">
+            <img src="images/comic/church_lable2.png" class="thumb-img" class="soft-text-box" style="height:30vh" alt="Image of comic">
+            <div class="sharp-text-box" style="max-height:10vh"><h4 style="margin:0px">Theodore meets a stranger, Again!</h4></div>
+        </div>
+        <div id="church2-click" class="comic-hide comic-click w3-threequarter" style="float: right;">
+            <div class="w3-col" style="width:40%;">
+                <img src="images/comic/church_lable3.jpg" class="click-img sharp-text-box" alt="Image of comic">
+            </div>
+            <div class="soft-text-box justify w3-col click-txt">
+                <h4>Main Story Chapter 2</h4>
+                <p>Follows the three main characters.</p>
+            </div>
+            <a href="art/churchTwo.html"><div class="sharp-text-box w3-col click-btn"><h4>Main Comic Chapter 2</h4></div></a>
+        </div>
+        
+
+        <div id="boat-hover" class="comic-hide w3-quarter">
+            <img src="images/boat.jpg" class="thumb-img" alt="Image of comic">
+            <div class="sharp-text-box" style="max-height:10vh"><h4 style="margin:0px">Boat Arc</h4></div>
+        </div>
+        <div id="boat-click" class="comic-hide comic-click w3-threequarter" style="float:right; padding:1em;">
+            <div class="soft-text-box justify w3-col click-txt" style="width:100%; min-height:45vh">
+                <img src="images/map2.jpg" class="click-img sharp-text-box" style="width: 50%;" alt="Image of comic">
+                <h4>Main Story Chapter 2</h4>
+                <p>Over half the length of the journey is taken up by them sailing. The group joins a passenger ship from the green capitol of Clif to the top of the Parmeia state. Along the way they pass by multiple cities picking up and dropping off passengers. </p>
+            </div>
+        </div>
+
+
+        <div id="umbrella-hover" class="comic-hide w3-quarter">
+            <img src="images/comic/umbrella-thumb.jpg" class="thumb-img" alt="Image of comic">
+            <div class="sharp-text-box" style="max-height:10vh"><h4 style="margin:0px">Umbrella Comic</h4></div>
+        </div>
+        <div id="umbrella-click" class="comic-hide comic-click w3-threequarter" style="float: right;">
+            <div class="w3-col" style="width:40%;">
+                <img src="images/comic/umbrella22.jpg" class="click-img sharp-text-box" alt="Image of comic">
+            </div>
+            <div class="soft-text-box justify w3-col click-txt">
+                <h4>Umbrella Story</h4>
+                <p>My first comic i made, it shows off a snippet of magic. The art is from just after i was starting drawing faces so they are pretty inconsistant. I drew this back when Theodore had grey skin and Cole had pink skin.</p>
+            </div>
+            <a href="art/umbrella.html"><div class="sharp-text-box w3-col click-btn"><h4>Umbrella Comic</h4></div></a>
+        </div>
+</div>
+
+
+<div style="position: relative; z-index:2; ">
+    <!-- vv TimeLine vv -->
+    <div class="time-line"></div>
+    <div class="timeline-big"
+        onmouseover="comicHover('AmagicOP')" 
+        onmouseout="comicHover('BmagicOP')"
+        onclick="comicHover('CmagicOP')">
+    </div>
+    <div class="timeline-big"
+        onmouseover="comicHover('AesmeLeaves')" 
+        onmouseout="comicHover('BesmeLeaves')"
+        onclick="comicHover('CesmeLeaves')">
+    </div>
+    <div class="timeline-big"
+        onmouseover="comicHover('Achurch1')" 
+        onmouseout="comicHover('Bchurch1')"
+        onclick="comicHover('Cchurch1')">
+    </div>
+    <div class="timeline-big"
+        onmouseover="comicHover('Achurch2')" 
+        onmouseout="comicHover('Bchurch2')"
+        onclick="comicHover('Cchurch2')">
+    </div>
+
+    <div class="timeline-medium"
+        onmouseover="comicHover('Aboat')" 
+        onmouseout="comicHover('Bboat')"
+        onclick="comicHover('Cboat')">
+    </div>
+    
+    <div class="timeline-big"></div>
+
+    <div class="timeline-medium"></div>
+    <div class="timeline-medium"></div>
+
+    <div class="timeline-big"
+    onmouseover="comicHover('Aumbrella')" 
+    onmouseout="comicHover('Bumbrella')"
+    onclick="comicHover('Cumbrella')"></div>
+
+    <div class="timeline-medium"></div>
+    <div class="timeline-medium"></div>
+    <div class="timeline-big"></div>
+    <div class="timeline-medium"></div>
+    <div class="timeline-medium"></div>
+    <div class="timeline-big"></div>
+    <div class="timeline-medium"></div>
+    <div class="timeline-medium"></div>
+    <div class="timeline-big"></div>
+
+    
+    <div class="w3-row w3-center" style="color:aquamarine; margin-top:0vh">
+        <h1 style="font-size:100px">Timeline</h1>
+    </div>
+</div>
+    
+</div>
+
+<script src="javascript/comic.js"></script>
+<script src="javascript/img-center.js"></script>
+</body>
+</html>

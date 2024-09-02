@@ -1,0 +1,300 @@
+.w3-hover {
+    cursor: pointer;
+}
+
+*::-webkit-scrollbar {
+    width: 12px; /* Adjust the scrollbar width */
+    height: 0px; /* Adjust the height to remove the x-axis scrolling */
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #ff69b4; /* Bright pink color for the thumb */
+    border-radius: 0; /* Remove rounded corners for sharp edges */
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent; /* Transparent background for the track */
+}
+
+.center-right{
+    align-items: center; display: flex;
+}
+
+/* If the center tags arent working, add this to which ever is smaller 
+.center-left{
+    align-items: center; display: flex;
+}
+
+
+
+/* vv Main Section vv */
+#main-section {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top; 
+    height:83.5vh;
+    padding-top:5vh;
+
+    border: 2px solid #ff69b4; 
+    overflow:scroll;
+}
+
+#main-section::after { /* Makes a clearfix (floated elements will stay inside the container) */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.soft-text-box {
+    border: 2px solid #ff69b4; 
+    border-radius: 5px; 
+    background-color: rgba(245, 245, 245, 0.8);
+}
+.soft-text-box p {
+    padding:.5em;
+    margin: 0;
+}
+
+.sharp-text-box {
+    border: 2px solid #ff69b4; 
+    background-color: rgba(245, 245, 245, 0.8); 
+    box-shadow: 6px 6px 0 rgb(233, 95, 164, .3);
+}
+
+.sharp-text-box::after { /* Makes a clearfix (floated elements will stay inside the container) */
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.side-padding {
+    padding: 0em 1em 0em 1em;
+}
+/* ^^ Main Section ^^ */
+
+/* vv Top Navigation vv */
+.top-nav {
+    float:left;
+    width: 15%; 
+    margin-left: 4%;
+    border: 2px solid #ff69b4; /* 2px width, solid style, bright pink color */
+    color:#ff69b4;
+    text-shadow: 2px 2px #558ABB;
+    border-radius: 5px; /* Creates a round border (for circular elements) */
+    background-color: rgba(245, 245, 245, 0.8); /* White with 50% transparency */
+  } 
+  
+  .top-nav a {text-decoration: none !important;}
+  .selected-box {background-color: rgba(245, 245, 245, 0.3); /* White with 50% transparency */}
+
+.selected-nav {       /* Little bar that visually connects the nav button to the box below*/
+    border-left: 35px solid #ff69b4;
+    height: 2vh;
+    width:20%;
+    float:left;
+    content:"";
+    display:table;
+    clear:both;
+}
+/* ^^ Top Navigation ^^ */
+
+
+
+/* vv world section vv */
+.sticky-bar {
+    padding: 0px 20px;
+    color: white;
+    text-align: center;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Ensure it's above other content */
+    background-color: transparent; /* Initially transparent background */
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+.nav-option {
+    width: auto;
+    padding:.5em;
+}
+
+.world-nav {
+    background-image: url("../images/roman005.png"); /* Replace 'your-image.jpg' with the actual path to your image file */
+    background-size: 100% 100%; /* Stretch the image to cover the entire div */
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 50vh;
+    padding-top:8vh; 
+    padding-left:6%; 
+    padding-right:6%;
+}
+
+.world-nav h4 {
+    display: list-item;
+    list-style-type: disc;
+    margin-left: 30px;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.down-arrow {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 30px solid #FF69B4; /* Bright pink color */
+    margin: 0 auto;
+}
+.down-arrow:hover {
+    border-top: 30px solid #eb0075; /* Bright pink color */
+    cursor: pointer;
+}
+/* ^^ World Section ^^ */
+
+.size-change {
+    height: 40vh;
+}
+/* ^^ gods page ^^ */
+
+
+/* vv Continent Page vv */
+.continent-button {
+    width:18%;
+    margin-left:1%;
+    margin-right:1%;
+    
+    border: 2px solid #ff69b4; /* 2px width, solid style, bright pink color */
+    background-color: rgb(255, 255, 255); /* White with 50% transparency */    
+}
+
+.continent-button-big {
+    width:80%;
+    margin: 2vh 10% 2vh 10%;
+    
+    border: 2px solid #ff69b4; /* 2px width, solid style, bright pink color */
+    background-color: rgb(255, 255, 255); /* White with 50% transparency */    
+}
+
+.continent-button:hover, .continent-button-big:hover {
+    background-color: rgba(177, 171, 171, 0.3); /* White with 50% transparency */
+    cursor: pointer;
+}
+
+.continent {
+    margin-top:8vh;
+    border: 2px solid #ff69b4; /* 2px width, solid style, bright pink color */
+    background-color: rgb(255, 255, 255); /* White with 50% transparency */    
+}
+/* ^^ Continent Page ^^ */
+
+
+/* vv Art Page vv */
+#comic-section{
+    border: 2px solid #ff69b4; /* 2px width, solid style, bright pink color */
+    border-radius: 5px; /* 0px top left */
+    margin-top:-15vh;
+}
+
+#art-section{
+    min-height:80vh;
+    background-image: linear-gradient(90deg, #FFB6C1, #87CEEB); /* Pink to light blue gradient */
+    background-size: 100% 20px; /* Adjust the size of the repeating pattern */
+
+    border: 2px solid #ff69b4; /* 2px width, solid style, bright pink color */
+    border-radius: 5px; /* 0px top left */
+    margin-bottom:20vh;
+    padding-top:5vh;
+}
+
+.character-button {
+    border: 2px solid #ff69b4; /* 2px width, solid style, bright pink color */
+    background-color: rgb(255, 255, 255, .25); /* White with 50% transparency */ 
+    margin-top:  5vh;/* Top Right Bottom Left */
+    text-align:center;
+
+    width:15%;
+    margin-left:.8%;
+    margin-right:.8%;
+}
+
+.art-button {
+    border: 2px solid #ff69b4; /* 2px width, solid style, bright pink color */
+    background-color: rgb(255, 255, 255, .25); /* White with 50% transparency */ 
+    margin:  2vh 20% 2vh 20%;/* Top Right Bottom Left */
+}
+
+.art-button:hover, .character-button:hover {
+    background-color: rgba(177, 171, 171, 0.3); /* White with 50% transparency */
+    cursor: pointer;
+}
+
+/* ^^ Art Page ^^ */
+
+
+/* vv Comic Page vv */
+.comic-main{
+    background-image: url("../images/old_ledger_inside_cover.png");
+    background-size:cover;
+}
+.comic-img-left{
+    max-height:100vh; max-width: 100%; cursor: pointer; float:right; margin-right: 5.5%;
+}
+.comic-img-right{
+    max-height:100vh; max-width: 100%; cursor: pointer; float:left; margin-left: 2.5%;
+}
+.centerfoldL{
+    max-height:100vh; max-width: 100%; cursor: pointer; float:right; margin-right: 4%;
+}
+.centerfoldR{
+    max-height:100vh; max-width: 100%; cursor: pointer; float:left; margin-left: 2%;
+}
+/* ^^ Comic Page ^^ */
+
+
+/* vv carrousel vv */
+.carousel-container {
+    position: relative;
+/*     max-width: 600px; */
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    flex: 0 0 100%; /* Forces each item to have the same width */
+    max-width: 100%;
+    overflow: auto;
+}
+
+.carousel-item img {
+    width: 100%;
+    max-height: 45vh; /* Set maximum height */
+    padding: 1em;
+    object-fit:scale-down;
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.thumbnail {
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.thumbnail:hover {
+    border-color: #333;
+}
+/* ^^ carrousel ^^ */

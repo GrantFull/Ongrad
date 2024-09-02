@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+ 
+#primary {
+  border: 2px solid #ff69b4; /* 2px width, solid style, bright pink color */
+  border-radius: 5px; /* 0px top left */
+}
+
+#secondary{
+  border: 2px solid #ff69b4; /* 2px width, solid style, bright pink color */
+  border-radius: 5px; /* 0px top left */
+}
+
+.box {
+  font-weight: bold;
+  user-select: none;
+  cursor: move;
+  transition: 0.1s;
+}
+.box span {
+  pointer-events: none;
+}
+
+/* Drag and Drop Related Styling */
+
+.drag-start {
+  opacity: 0.4;
+}
+.drag-enter {
+  border-style: dashed;
+}
+.box:nth-child(odd).drag-enter {
+  transform: rotate(2deg);
+}
+.box:nth-child(even).drag-enter {
+  transform: rotate(-2deg);
+}
+.box:nth-child(odd).drag-start {
+  transform: rotate(2deg) scale(0.75);
+}
+.box:nth-child(even).drag-start {
+  transform: rotate(-2deg) scale(0.75);
+}
+
+@media (max-width: 600px) {
+  html { 
+    font-size: 14px; 
+  }
+  .box {
+    width: 4rem; 
+    height: 4rem; 
+    font-size: 2rem;
+    margin: 0.5rem;
+  }
+}

@@ -1,6 +1,14 @@
 /* vv Cole Page vv */
-.w3-hover {
-    cursor: pointer;
+
+@font-face {
+    font-family: 'inkfree';
+    src: url('../fonts/Inkfree.ttf') format('truetype');
+    font-weight: light;
+    font-style: normal;
+}
+
+.cole-font * {
+    font-family: 'inkfree', sans-serif;
 }
 
 #cole-main {
@@ -22,7 +30,7 @@
 .cole-text-box {
     border: 3px solid #ff6969; /* 2px width, solid style, bright pink color */
     background-color: rgba(245, 245, 245, 0.8); /* White with 50% transparency */
-    padding:10px
+    padding: 1em;
 }
 
 .cole-img-box {
@@ -31,8 +39,8 @@
 }
 
 .cole-text-box p {
-    padding-left:10px;
     margin:0;
+    font-size: large;
 }
 
 .cole-art {
@@ -46,6 +54,17 @@
 
 
 /* vv Theo Page vv */
+@font-face {
+    font-family: 'segoesemilight';
+    src: url('../fonts/SegoeUIVariableStaticTextSemilight.ttf') format('truetype');
+    font-weight: light;
+    font-style: normal;
+}
+
+.sun-font * {
+    font-family: 'segoesemilight', sans-serif;
+}
+
 #theo-main {
     border: 4px solid #ff69b4; /* 2px width, solid style, bright pink color */
     background-image: url("../images/background12.png"); /* Replace 'your-image.jpg' with the actual path to your image file */
@@ -61,11 +80,10 @@
 .theo-text-box {
     border: 3px solid #ff69b4; /* 2px width, solid style, bright pink color */
     background-color: rgba(245, 245, 245, 0.8); /* White with 50% transparency */
-    padding:10px
+    padding:1em;
 }
 
 .theo-text-box p {
-    padding-left:10px;
     margin:0;
 }
 
@@ -103,12 +121,11 @@
     border: 3px solid #f18b39; /* 2px width, solid style, bright pink color */
     border-radius:5px;
     background-color: rgba(245, 245, 245, 0.8); /* White with 50% transparency */
-    padding:10px;
+    padding:1em;
     text-align: justify;
 }
 
 .sun-text-box p {
-    padding-left:10px;
     margin:0;
 }
 
@@ -125,6 +142,17 @@
 /* ^^ Sun Page ^^ */
 
 /* vv Ronan Page vv */
+@font-face {
+    font-family: 'bodoni';
+    src: url('../fonts/bodoni-mt-regular.ttf') format('truetype');
+    font-weight: light;
+    font-style: normal;
+}
+
+.sun-font * {
+    font-family: 'bodoni', sans-serif;
+}
+
 #ronan-main {
     border: 4px solid #34abda; /* 2px width, solid style, bright pink color */
     background-image: url("../images/background07.jpg"); /* Replace 'your-image.jpg' with the actual path to your image file */
@@ -141,17 +169,27 @@
     border: 3px solid #34abda; /* 2px width, solid style, bright pink color */
     border-radius:5px;
     background-color: rgba(245, 245, 245, 0.8); /* White with 50% transparency */
-    padding:10px;
+    padding:1em;
     text-align: justify;
 }
 
 .ronan-text-box p {
-    padding-left:10px;
     margin:0;
 }
 /* ^^ Ronan Page ^^ */
 
 /* vv Esme Page vv */
+@font-face {
+    font-family: 'bahnschrift';
+    src: url('../fonts/BAHNSCHRIFT.ttf') format('truetype');
+    font-weight:100;
+    font-stretch: condensed;
+}
+
+.esme-font * {
+    font-family: 'bahnschrift', sans-serif;
+}
+
 #esme-main {
     border: 4px solid #34abda; /* 2px width, solid style, bright pink color */
     background-image: url("../images/background07.jpg"); /* Replace 'your-image.jpg' with the actual path to your image file */
@@ -168,13 +206,13 @@
     border: 3px solid #34abda; /* 2px width, solid style, bright pink color */
     border-radius:5px;
     background-color: rgba(245, 245, 245, 0.8); /* White with 50% transparency */
-    padding:10px;
+    padding:1em;
     text-align: justify;
 }
 
 .esme-text-box p {
-    padding-left:10px;
     margin:0;
+    font-size: large;
 }
 /* ^^ Esme Page ^^ */
 

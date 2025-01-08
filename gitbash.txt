@@ -3,6 +3,7 @@ Laptop Access: cd main/ongrad/neocities
 git status (checks if all files are up to date)
 git commit -m "insert messeage here" (sends your stuff up to the repository)
 git add . (tracks all the files)
+git rm "images/urmom.kra" (removes da file)
 
 to add a file:
 	drag and drop the file to the folder

@@ -51,7 +51,6 @@ function button(id) {
   hideAll(); //hides all images
   const element = document.getElementById(id); //gets the id of the div's button
   element.classList.toggle("on-display");      //if a div has the class "on-display" images with the same class as the div's id will be shown
-  element.classList.toggle("w3-light-grey");   //UI to show if the option is selected
 
   displayImg();
 }

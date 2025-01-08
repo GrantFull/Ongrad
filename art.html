@@ -8,9 +8,11 @@
     <script src="javascript/nav-bar.js"></script>
     <style>
         body {
-            background-image: url('images/background01.jpg'); /* Replace 'your-image.jpg' with the actual path to your image file */
-            background-size: cover; /* This will cover the entire viewport */
-            background-repeat: no-repeat; /* To prevent the image from repeating */
+    background-image: url("images/background01.jpg"); /* Replace 'your-image.jpg' with the actual path to your image file */
+    background-size: 100vw 300vh;/* Stretch the image to cover the entire div */
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 50%;
             padding-left:5%;
             padding-right:5%;
             margin-top:2vh;
@@ -72,8 +74,8 @@
             <h2>Settings</h2>
             <h3 class="art-button" onclick="increaseHeight()">Magnify</h3>
             <h3 class="art-button" onclick="decreaseHeight()">Shrink</h3>
-            <h3 class="art-button inclusive" onclick="inclusiveFunc()">And</h3>
-            <h3 class="art-button inclusive w3-hide" onclick="inclusiveFunc()">With</h3>
+            <h3 class="art-button inclusive" onclick="inclusiveFunc()">Or</h3>
+            <h3 class="art-button inclusive w3-hide" onclick="inclusiveFunc()">And</h3>
             <p></p>
         </div>
         <div class="w3-threequarter w3-center">
@@ -82,23 +84,47 @@
     </div>
 
     <div class="w3-row">
-        <div id="cole" class="w3-col character-button" onclick="button('cole')"><h3>Cole</h3></div>
-        <div id="theo" class="w3-col character-button" onclick="button('theo')"><h3>Theodore</h3></div>
-        <div id="sun" class="w3-col character-button" onclick="button('sun')"><h3>Sun</h3></div>
-        <div id="ronan" class="w3-col character-button" onclick="button('ronan')"><h3>Ronan</h3></div>
-        <div id="esme" class="w3-col character-button" onclick="button('esme')"><h3>Esme</h3></div>
-        <div id="moon" class="w3-col character-button" onclick="button('moon')"><h3>Moon</h3></div>
+        <div id="theo" class="w3-col character-button" onclick="button('theo')"><img src="images/theo-button.png" width="100%"
+        onmouseover="this.src='images/theo-button2.png'" onmouseout="this.src='images/theo-button.png'" onclick="this.src='images/theo-button2.png'"></div>
+        
+        <div id="cole" class="w3-col character-button" onclick="button('cole')"><img src="images/cole-button.png" width="100%"
+        onmouseover="this.src='images/cole-button2.png'" onmouseout="this.src='images/cole-button.png'" onclick="this.src='images/cole-button2.png'"></div>
+        
+        <div id="sun" class="w3-col character-button" onclick="button('sun')"><img src="images/sun-button.png" width="100%"
+        onmouseover="this.src='images/sun-button2.png'" onmouseout="this.src='images/sun-button.png'" onclick="this.src='images/sun-button2.png'"></div>
+        <!-- <div id="sun" class="w3-col character-button" onclick="button('sun')"><h3>Sun</h3></div> -->
+
+        
+        <div id="ronan" class="w3-col character-button" onclick="button('ronan')"><img src="images/ronan-button.png" width="100%"
+        onmouseover="this.src='images/ronan-button2.png'" onmouseout="this.src='images/ronan-button.png'" onclick="this.src='images/ronan-button2.png'"></div>
+        <!-- <div id="ronan" class="w3-col character-button" onclick="button('ronan')"><h3>Ronan</h3></div> -->
+
+        <div id="esme" class="w3-col character-button" onclick="button('esme')"><img src="images/esme-button.png" width="100%"
+        onmouseover="this.src='images/esme-button2.png'" onmouseout="this.src='images/esme-button.png'" onclick="this.src='images/esme-button2.png'"></div>
+        <!-- <div id="esme" class="w3-col character-button" onclick="button('esme')"><h3>Esme</h3></div> -->
+
+        
+        <div id="moon" class="w3-col character-button" onclick="button('moon')"><img src="images/moon-button.png" width="100%"
+        onmouseover="this.src='images/moon-button2.png'" onmouseout="this.src='images/moon-button.png'" onclick="this.src='images/moon-button2.png'"></div>    
+        <!-- <div id="moon" class="w3-col character-button" onclick="button('moon')"><h3>Moon</h3></div> -->
     </div>
 
     <!-- vv Character Images vv -->
     <div id="image-section" class="w3-center w3-row w3-padding" style="min-height: 20vh;">
         <script>
             let images = [
+              { src: "character090.png", characters: "ronan" },
+              { src: "character089.jpg", characters: "theo" },
+              { src: "character088.jpg", characters: "theo cole sun" },
+              { src: "character087.jpg", characters: "theo cole" },
+              { src: "character086.jpg", characters: "theo" },
+              { src: "character085.jpg", characters: "theo cole" },
+              { src: "character084.jpg", characters: "theo cole" },
               { src: "character083.jpg", characters: "theo" },
               { src: "esme001.jpg", characters: "esme" },
               { src: "character082.jpg", characters: "theo" },
               { src: "character081.jpg", characters: "theo" },
-              { src: "character080.jpg", characters: "cole theo sun moon ronan esme" },
+              { src: "character080.jpg", characters: "cole theo sun ronan esme" },
               { src: "character079.jpg", characters: "esme" },
               { src: "character078.jpg", characters: "ronan" },
               { src: "character077.png", characters: "cole" },

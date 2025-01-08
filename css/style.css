@@ -208,7 +208,7 @@
     padding-top:5vh;
 }
 
-.character-button {
+.character-button1 {
     border: 2px solid #ff69b4; /* 2px width, solid style, bright pink color */
     background-color: rgb(255, 255, 255, .25); /* White with 50% transparency */ 
     margin-top:  5vh;/* Top Right Bottom Left */
@@ -219,6 +219,21 @@
     margin-right:.8%;
 }
 
+.character-button {
+    margin-top:  5vh;/* Top Right Bottom Left */
+    width:15%;
+    margin-left:.8%;
+    margin-right:.8%;
+}
+
+.on-display {
+    background-image: url("../images/background01.jpg"); /* Replace 'your-image.jpg' with the actual path to your image file */
+    background-size: 100vw 300vh;/* Stretch the image to cover the entire div */
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 10%;
+}
+
 .art-button {
     border: 2px solid #ff69b4; /* 2px width, solid style, bright pink color */
     background-color: rgb(255, 255, 255, .25); /* White with 50% transparency */ 
@@ -226,7 +241,6 @@
 }
 
 .art-button:hover, .character-button:hover {
-    background-color: rgba(177, 171, 171, 0.3); /* White with 50% transparency */
     cursor: pointer;
 }
 

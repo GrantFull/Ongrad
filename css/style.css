@@ -29,9 +29,8 @@
 
 /* vv Main Section vv */
 #main-section {
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: top; 
+    background-size: 100vw;/* Stretch the image to cover the entire div */
+    background-attachment: fixed;
     height:83.5vh;
     padding-top:5vh;
 
@@ -270,9 +269,10 @@
 /* vv carrousel vv */
 .carousel-container {
     position: relative;
-/*     max-width: 600px; */
+/*  max-width: 600px; */
     margin: auto;
     overflow: hidden;
+    border-radius: 4em
 }
 
 .carousel {
@@ -290,13 +290,14 @@
     width: 100%;
     max-height: 45vh; /* Set maximum height */
     padding: 1em;
+    border-radius: 4em 4em 0em 0em;
     object-fit:scale-down;
 }
 
 .thumbnails {
     display: flex;
     justify-content: center;
-    margin-top: 1em;
+    /* padding-bottom: 1em; */
 }
 
 .thumbnail {

@@ -16,6 +16,13 @@
             margin-top:5vh;
         }
 
+        .cole-background {
+            background-image: url("../images/background06.jpg"); /* Replace 'your-image.jpg' with the actual path to your image file */
+            background-size: 100vw;/* Stretch the image to cover the entire div */
+            background-position: 5vw -55vh;
+            background-attachment: fixed;
+        }
+
         h1, h2, h3, h4, h5, h6, p, body, * {
             font-family: 'inkfree', sans-serif; 
         }
@@ -38,7 +45,7 @@
 
 
 
-<div id="cole-main" class="w3-row" style="padding-bottom: 5vh; margin-bottom:3vh">
+<div id="cole-main" class="w3-row cole-background" style="padding-bottom: 5vh; margin-bottom:3vh">
 
     <div class="w3-row w3-center" style="margin:2% 0px -10vh 0px; color:whitesmoke; width:15%">
         <a href="../characters.html">
@@ -51,10 +58,10 @@
     <!-- vv Section A vv -->
     <div class="w3-justify w3-row w3-padding" style="display: flex; position: relative;">
         <div class="w3-row">
-        <div class="center-left w3-col w3-padding" style="width:25%; margin-left:2%">
+        <div class="center-left w3-col w3-padding" style="width:25%; margin-left:2%; cursor: pointer;">
             <div class="w3-display-container w3-text-white summon-cole w3-padding" onclick="summonCole('.summon-cole')">
                 <img src="../images/characters/cole004.jpg" alt="Cole on the summon stone" style="width:100%; cursor: pointer">
-                <div class="w3-display-middle w3-xxlarge" style="cursor: pointer"><u>Summoning</u></div>
+                <div class="w3-display-middle w3-xxlarge"><u>Summoning</u></div>
             </div>
         
             <p class="summon-cole w3-hide w3-hover cole-text-box" onclick="summonCole('.summon-cole')">Cole was summoned emaciated and confused. She was supposed to be re-invigorated by the summoning process but ended up just lucky to be alive after the spell was muddled. She had to be carried out of the area and placed in a cart. (This is a panel from my comic,<a href="../art/churchOne.html" target="_blank">check it out.</a>)</p>
@@ -65,6 +72,7 @@
             <div class="cole-text-box w3-padding" style="margin-right:10%">
                 <h3>Personality</h3>
                 <p>Cole is confident, she's usually pretty lucky and always goes into situations expecting them to work out. When something doesn't go her way Cole takes it in stride and adapts by making a new plan rather than brewing on how it went wrong. Cole thinks very 'in the moment' and is not a reflective person which causes her to repeat mistakes. Cole has a very hot temper which most often manifests as yelling, but everyone involved understands that it's more of a performance than a real anger (<a href="https://www.youtube.com/shorts/lKqk4h9mmi8" target="_blank">a perfect example is the replenish video)</a>. She can also be devious and can be mean spirited or spiteful with someone she truly despises. Cole will go out of her way to be manipulative and attempt to socially humiliate a person. Cole thinks this is normal behavior and is skeptical when it comes to meeting new people or being around others that she can't get a good read on.</p>
+                <p>Cole has a prevaling sense of right and wrong guided by an underdeveloped without nuance </p>
 
                 <br>
                 <h3>Cole's Powers</h3>
@@ -102,9 +110,10 @@
 
             <div class="cole-text-box w3-justify w3-padding" style="width:28%; max-height:30vh; margin-bottom: 5vh; overflow: auto; align-self: flex-end;">
        <h5>Pre-Gaming (Backstory)</h5>
-                <p>Cole was chosen because she was an estranged disciple of the language god. Left at the temple as a sacrifice Cole was taken in and raised by the priests outside the temple. She was eventually expected to enter the temple and receive the god's blessing but did so reluctantly. Because she was a disciple she was allowed pilgrimage, and joined a convey to a demigod's domain.</p>
-                <br>
-                <p>The domain turned out to be a human farm where she was penned in until being summoned by Sun. She was chosen for a few reasons, <br>A. Cole was in the closest domain and near death, making her soul & body less resistant to physical transfer  
+                <p>Cole was chosen because she was an estranged disciple of the language god. Left at the temple as a sacrifice Cole was taken in and raised by the priests outside the temple. She was eventually expected to enter the temple and receive the god's blessing but did so reluctantly. As a disciple Cole was allowed pilgrimage, and joined a convoy to a demigod's domain. The domain turned out to be a human farm where she was penned in until being summoned by Sun. She was chosen for a few reasons,</p> 
+                
+                <p style="line-height: 1.2em; margin-left:1em; margin-top: -1em">
+                <br>A. Cole was in the closest domain and near death, making her soul & body less resistant to physical transfer  
                 <br>B. Cole was a disciple which is a requirement for the spell  
                 <br>C. Cole was inside the domain meaning that whatever happened to her would be unnoticed by any of the Seven.</p>
             </div>
@@ -113,15 +122,17 @@
 
     <!-- vv Section D vv -->
         <div class="w3-row cole-img-box" style="margin:0px 2.5% 0 2.5%">
-            <div class="w3-quarter w3-padding" style="margin-top:5vh">
+            <div class="w3-col w3-padding" style="width: 15%; margin-top:5vh">
                 <h3>Duality</h3>
-                <p class="">Inside of Cole there are two wolves, one is a normal slay woman who is loud and obnoxious. The other is a massive fuzzy.</p>
+                <p>Inside of Cole there are two wolves, one is a normal slay woman who is loud and obnoxious. The other is a massive fuzzy.</p>
             </div>
-            <div class="w3-quarter">
-                <img src='../images/characters/cole007.png' style=" width:100%; overflow:auto" alt="Epic image of Cole">
+            <div class="w3-col" style="width:40%">
+                <img src='../images/massiv-fuzzy.png' style="max-height: 65vh;" alt="Epic image of Cole">
             </div>
-            <div class="w3-half">
-                <img src='../images/characters/cole008.png' style=" width:100%; overflow:auto" alt="Epic image of Cole">
+            <div class="w3-col cole-background w3-center" style="width:40%; margin:3em 2.5% 3em 2.5%; border-radius: 3em; padding: 2em 0px 2em 0px">
+                <h1 style="font-weight: bolder; text-shadow: 2px 2px whitesmoke;">Kins</h1>
+                <img src="../images/fight-club.jpg" style="width: 35%" alt="Epic image">
+                <img src="../images/boogie.jpg" style="width: 35%; margin-left:12%" alt="Epic image">
             </div>
         </div>
     <!-- ^^ Section D ^^ -->

@@ -13,10 +13,6 @@
 
 #cole-main {
     border: 4px solid #ff6969; /* 2px width, solid style, bright pink color */
-    background-image: url("../images/background06.jpg"); /* Replace 'your-image.jpg' with the actual path to your image file */
-    background-size: 100%;/* Stretch the image to cover the entire div */
-    background-repeat: no-repeat;
-    background-position: top;
 
     height:90vh;
     overflow:auto;
@@ -83,7 +79,7 @@
 }
 
 .theo-text-box p {
-    margin:0;
+    margin:0px;
 }
 
 .theo-art {

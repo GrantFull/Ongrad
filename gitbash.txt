@@ -14,4 +14,4 @@ to remove file:
 	git rm "images/gimp.txt"
 	git status (not nessesary checks if its been deleted)
 	git commit -m "[discribe update]" (commits changes)
-	
+	New set of men
